@@ -15,6 +15,7 @@ if (!isset($_SESSION["user_id"])) {
 if (isset($_POST["cancel"])) {
     header("Location: $url/index.php");
     die();
+}
 
 if (isset($_POST["add"])) {
     $position_validate = validatePos();

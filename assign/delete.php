@@ -14,6 +14,7 @@ if ( isset($_POST['Delete']) && isset($_POST['profile_id']) ) {
     $stmt->execute(array(':zip' => $_POST['profile_id']));
     $_SESSION['success'] = 'Record deleted';
     header( 'Location: index.php' ) ;
+    return;
 }
 
 // Guardian: Make sure that user_id is present
